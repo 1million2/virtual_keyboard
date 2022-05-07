@@ -1,9 +1,7 @@
 import './style.scss';
 import {buttons} from './data'
 const container = document.querySelector('#root')
-
 const text = document.querySelector('#text');
-
 
 
 
