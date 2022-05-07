@@ -1,0 +1,62 @@
+$font-size: 20px;
+$silver: rgb(155, 155, 155);
+$silver-dark: rgb(124, 124, 124);
+$active-color: burlywood;
+$bcg: rgb(190, 190, 190);
+body {
+    font-size: $font-size;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 917px;
+    row-gap: 5px;
+    column-gap: 5px;
+    padding: 15px;
+    border: solid black 1px;
+    background-color: $bcg;
+}
+[data-code='ArrowUp'] {
+    margin-right: 32px;
+}
+textarea {
+    width: 500px;
+    height: 200px;
+}
+.btn-body {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: $silver;
+    border: 1px solid black;
+    cursor: pointer;
+
+    &.dark {
+        background-color: $silver-dark;
+    }
+    &.xl {
+        width: 372px;
+    }
+    &.large {
+        width: 107px;
+    }
+    &.medium {
+        width: 70px;
+    }
+    &.left-shift {
+        width: 144px;
+    }
+    &.active {
+        background-color: $active-color;
+    }
+
+}
